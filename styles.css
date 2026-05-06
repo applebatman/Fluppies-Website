@@ -1,9 +1,23 @@
 
-*{
-    background-color: yellow;
+html{
+    background-color: #EAF5B7;
+
 }
 
 .nav {
+    display: flex;
+    text-align: left;
     background-color: green;
+}
 
+.runningBanner {
+    background-color: #AAE88E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs img {
+    width: 50%;
+    height: 50%;
 }
