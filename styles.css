@@ -1,13 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 
 html{
     background-color: #EAF5B7;
+    font-family: "Host+Grotesk", sans-serif
 
 }
 
-.nav {
+header {
     display: flex;
-    text-align: left;
-    background-color: green;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo img {
+    height: 20%;
+    width: 20%;
+}
+
+nav {
+    display: flex;
+    list-style-type: none;
+    background-color: red;
+}
+
+nav li {
+    display: inline;
+
 }
 
 .runningBanner {
