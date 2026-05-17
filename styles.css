@@ -17,14 +17,10 @@ html{
     cursor: pointer;
     margin-right: auto;
     background-color: #AAE88E;
-    height: 20%;
-    width: 20%;
+    height: auto;
+    width: 10%;
 }
 
-.logo img {
-    height: 20%;
-    width: 20%;
-}
 
 nav {
     display: flex;
@@ -34,11 +30,13 @@ nav {
     height: auto;
     align-items: center;
     padding: 1em 1em;
+    justify-content: flex-end;
 }
 
 nav li {
     display: inline;
-
+    padding: 1vh;
+    
 }
 
 nav li a{
@@ -59,25 +57,59 @@ nav li a:hover{
 
 .aboutUs {
     display: grid;
-    background-color: purple;
-    border: 4px solid black;
     border-radius: 10px;
     gap: 10px;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: 7fr 20fr;
+    padding: 10vh;
+    background-color: white;
+    align-items: stretch;
 
 }
 
 .aboutUs img {  
     height: auto;
-    width: 20vw;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutUsText {
+    padding: 1vw;
+}
+
+footer {
     display: flex;
-       border: 4px solid black;
+    flex-direction: column  ;   
+    align-items: center; 
+    padding: 2vh;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    padding:2vh;
+}
+
+footer h2 {
+    padding:2vh
+}
+
+footer input{
+    display:flex;
+    text-align: center;
+    border-radius: 5vh;
+    width: 80%;
+    padding:2vh
+    
+    
+}
+
+footer ul li {
+    list-style-type: none;
+    text-align: center;
+    padding:1vh;
 
 }
 
-.aboutUs h2 {
-    width: 1000%;
-       border: 4px solid black;
-
+footer ul li a:hover{
+    color: #91268E;
 }
