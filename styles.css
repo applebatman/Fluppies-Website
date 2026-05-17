@@ -81,6 +81,7 @@ footer {
     flex-direction: column  ;   
     align-items: center; 
     padding: 2vh;
+    width: 100%;
 }
 
 footer ul {
@@ -112,4 +113,45 @@ footer ul li {
 
 footer ul li a:hover{
     color: #91268E;
+}
+
+footer svg {
+    width: 5vh;
+    height: 5vh;
+    aspect-ratio: 1;
+    fill: black;
+
+}
+
+footer a:hover svg path {
+    fill: #91268E;
+}
+
+a {
+    text-decoration: none;
+}
+
+.reccommendedThumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.reccommended {
+    padding: 10vh;
+
+}
+
+.reccommendedThumbnails img {
+    object-fit: cover;
+    align-items: center;
+    padding-top: 5%;
+    height: auto;
+    width: 100%;
+}
+
+.thumbnail {
+    padding-right: 1%;
 }
