@@ -133,25 +133,62 @@ a {
 
 .reccommendedThumbnails {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    gap: .7em;
 
 }
 
 
 .reccommended {
     padding: 10vh;
-
+    
 }
 
 .reccommendedThumbnails img {
-    object-fit: cover;
-    align-items: center;
-    padding-top: 5%;
-    height: auto;
+    object-fit: stretch;
     width: 100%;
+    border: black solid 3px;
 }
 
 .thumbnail {
-    padding-right: 1%;
+    display: inline-block;
+    position: relative;
+    
+}
+
+
+.thumbnail a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border:2px solid #000000;
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
+    font-size: 20px;
+    padding:2%
+
+ 
+}
+
+.thumbnail a:hover {
+    background-color: white;
+}
+
+
+.carasol {
+    position: relative; 
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.carasol img{
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display:block
 }
