@@ -177,18 +177,39 @@ a {
 
 
 .carasol {
-    position: relative; 
+    position: relative;
     width: 100%;
     margin: auto;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
 .carasol img{
-    width: 100%;
-    display: none;
+    width: 50%;
+    aspect-ratio: 1:2;
+    display: none;    
 }
 
 img.displaySlide{
-    display:block
+    display: block;
+}
+
+
+.carasol button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    color: black;
+    background-color: none;
+    cursor: pointer;
+}
+
+.prev {
+    left:0;
+}
+
+.next{
+    right:0;
 }
