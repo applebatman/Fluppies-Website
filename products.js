@@ -18,7 +18,7 @@ const products = [
         { 
         id: 2,
         title: "FRILLY DRESS",
-        category:"Hats",
+        category:"Dresses",
         price: "$50",
         description: "Dress",
         colors: [
@@ -62,5 +62,10 @@ const products = [
             }
         ]
 
-    }
+    },
+
+
+
+    
+
 ]

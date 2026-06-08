@@ -48,18 +48,22 @@ function nextSlide(){
 
 //display products
 const productContainer = document.querySelector(".product-list");
+const isProductDetailPage = document.querySelector(".product-detail");
+
 
 const urlParams = new URLSearchParams(window.location.search);
 const selectedCategory = urlParams.get('category')
 
 if (productContainer) {
     displayProducts();
+} else if (isProductDetailPage) {
+    displayProductDetail();
 }
 
 function displayProducts() {
 
     let filteredProducts = products;
-    
+
     if (selectedCategory) {
         filteredProducts = products.filter(p => p.category === selectedCategory);
     }
@@ -83,5 +87,21 @@ function displayProducts() {
     }
 
     )
+}
+
+//display detail for products//
+
+function displayProductDetail(){
+    const productData = JSON.parse(sessionStorage.getItem("selectedProduct"))
+
+    const titleEl = document.querySelector(".title");
+    const priceEl = document.querySelector(".price");
+    const descriptionEl = document.querySelector(".description");
+    const mainImageContainer = document.querySelector(".main-img");
+    const thumbnailContainer = document.querySelector(".thumbnail-list");
+    const sizeContainer = document.querySelectorAll(".size-options");
+    const addToCartBtn = document.querySelector("#add-cart-btn");
+
+    mainImageContainer.innerHTML = '<img src'    
 }
 
