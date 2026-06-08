@@ -16,13 +16,13 @@ const products = [
     },
         { 
         id: 2,
-        title: "RADIANT DRESS",
+        title: "FRILLY DRESS",
         price: "$50",
         description: "Dress",
         colors: [
             {
                 name: "Red",
-                mainImage: "assets/images/productsPage/radiantDressThumbnail.png",
+                mainImage: "assets/images/productsPage/frillyDress.png",
                 thumbnails: [],
                 sizes: ["S", "M", "L", "XL", "XXL"]
             }
