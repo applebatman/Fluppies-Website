@@ -49,12 +49,21 @@ function nextSlide(){
 //display products
 const productContainer = document.querySelector(".product-list");
 
+const urlParams = new URLSearchParams(window.location.search);
+const selectedCategory = urlParams.get('category')
+
 if (productContainer) {
     displayProducts();
 }
 
 function displayProducts() {
-    products.forEach(product=> {
+
+    let filteredProducts = products;
+    
+    if (selectedCategory) {
+        filteredProducts = products.filter(p => p.category === selectedCategory);
+    }
+    filteredProducts.forEach(product=> {
         const productCard = document.createElement("div");
         productCard.classList.add("product-card");
         productCard.innerHTML = `

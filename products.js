@@ -2,6 +2,7 @@ const products = [
     { 
         id: 1,
         title: "RADIANT DRESS",
+        category:"Dresses",
         price: "$50",
         description: "Dress",
         colors: [
@@ -17,6 +18,7 @@ const products = [
         { 
         id: 2,
         title: "FRILLY DRESS",
+        category:"Hats",
         price: "$50",
         description: "Dress",
         colors: [
@@ -32,6 +34,7 @@ const products = [
         { 
         id: 3,
         title: "RADIANT DRESS",
+        category:"Collars",
         price: "$50",
         description: "Dress",
         colors: [
@@ -47,6 +50,7 @@ const products = [
         { 
         id: 4,
         title: "RADIANT DRESS",
+        category:"Collars",
         price: "$50",
         description: "Dress",
         colors: [
