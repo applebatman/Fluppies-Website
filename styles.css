@@ -596,6 +596,10 @@ img.displaySlide{
 
 
 /*Ai Implementation featuring*/
+
+.AiImplementation {
+    width:52%;
+}
 .AiImplementation h2{
     padding-bottom: 1rem;
 
@@ -604,23 +608,46 @@ img.displaySlide{
 
 .tryOnArea {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    height: 100%;
+    aspect-ratio: 1.7/1;
+    background-color:#AAE88E;
+    border: black 3px solid;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .blankSpace {
     background-color: white;
-    width: 20px;
-    height: 100%;
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.blankSpace .generateBtn {
+    position: absolute;
+    bottom: 3%;
+    padding-right: 1em;
+    padding-left: 1em;
     border: black 2px solid;
+    background-color: #9EEDFF;
+    font-size: 1.3rem;
+}
+
+.generateBtn:hover {
+    background-color: #6eb6c6;
+    cursor: pointer;
 }
 
 .pickStyle {
-    width: 20%;
-    height:25%;
-    background-color: #AAE88E;
-    border-color: black solid 2px;
+    display: flex;
+    width: 15%;
+    height:100%;
+    background-color:#AAE88E;
+    border-left: black 2px solid;   
+
 }
+
 
 
 /*cart styling*/
@@ -677,9 +704,9 @@ img.displaySlide{
 }
 
 .cart-item .size{
-    width:5%;
-    height:5%;
-    padding: 6px 12px;
+    width:2em;
+    height:20%;
+    text-align: center;
     background: rgb(255, 255, 255);
     font-size: 14px;
     border: black solid 2px;
@@ -693,9 +720,10 @@ img.displaySlide{
 .cart-item .quantity input {
     width: 50px;
     padding: 5px;
-    border: 1px solid white;
+    border: 2px solid rgb(0, 0, 0);
     outline: none;
     text-align: center;
+   
 }
 
 .cart-item .product .itemDetail {
@@ -708,12 +736,9 @@ img.displaySlide{
     flex:1;
 }
 
-.cart-item .remove i{
-    font-size: 20px;
-    color:black;
-    cursor:pointer;
+.remove svg {
+    width: 15%;
 }
-
 .cart-total {
     width: 400px;
     margin: 50px 0 0 auto;

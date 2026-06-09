@@ -27,7 +27,7 @@ const products = [
         title: "FRILLY DRESS",
         category:"Dresses",
         price: "$50",
-        description: "Dress",
+        description: "Blue dress made of ",
         colors: [
             {
                 name: "Red",
