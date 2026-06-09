@@ -14,15 +14,6 @@ html{
     font-family: "Host Grotesk";
 }
 
-
-.logo {
-    cursor: pointer;
-    margin-right: auto;
-    background-color: #AAE88E;
-    height: auto;
-    width: 10%;
-}
-
 /*navigation bar*/
 
 nav {
@@ -59,7 +50,7 @@ nav .cart-icon {
 
 nav .cart-icon .cart-item-count{
     position: absolute;
-    top: 0;
+    top: -5px;
     right: -6px;
     width: 20px;
     height: 20px;
@@ -83,7 +74,7 @@ nav li a:hover{
 
 
 nav .cart-icon svg {
-    width: 35px;
+    width: 2em;
     height: 35px;
     display: block;
 }
@@ -91,6 +82,29 @@ nav .cart-icon svg {
 nav .mainLogo {
     width: 20%;
 }
+
+/* Bumped to 430px to safely catch all modern mobile screens including iPhones */
+@media (max-width: 391px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav .mainLogo {
+    width: 5em;
+    }
+
+    nav ul {
+        gap: 0.00000001px;
+    }
+    nav ul li {
+        font-size: 1rem;
+    }
+
+
+}
+
+
 
 /*home page banner*/
 
@@ -103,12 +117,20 @@ nav .mainLogo {
     justify-content: space-around;
 }
 
+@media (max-width: 391px) {
+    .runningBanner {
+        font-size: 10px;
+        height: 7vw;
+    }
+
+
+}
 
 /*about us home page section*/
 
 .aboutUs {
     display: grid;
-    border-radius: 10px;
+    border-radius: 2px;
     gap: 10px;
     grid-template-columns: 7fr 20fr;
     padding: 10vh;
@@ -128,6 +150,32 @@ nav .mainLogo {
 
 .aboutUsText {
     padding: 1vw;
+}
+
+@media (max-width: 391px) {
+    .aboutUs {
+    display: grid;
+    border-radius: 2px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding: 10vh;
+    padding-top: 5vh;
+    background-color: white;
+    align-items: stretch;
+    margin: none;
+
+}
+
+
+.aboutUs img {  
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutUsText {
+    padding: 1px;
+}
 }
 
 /*footer*/
@@ -234,6 +282,57 @@ a {
 
 .thumbnail a:hover {
     background-color: white;
+}
+
+@media (max-width: 391px) {
+    .reccommendedThumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: .7em;
+    padding-top: 1em;
+
+}
+
+
+.reccommended {
+    padding: 10px;
+    padding-top: 1em;
+    font-size: 8px;
+    margin-bottom: 20px;
+}
+
+.reccommendedThumbnails img {
+    object-fit: stretch;
+    width: 100%;
+    border: black solid 2px;
+}
+
+.thumbnail {
+    display: inline-block;
+    position: relative;
+    
+}
+
+
+.thumbnail a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border:1px solid #000000;
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
+    font-size: 12px;
+    padding:2%;
+
+ 
+}
+
+.thumbnail a:hover {
+    background-color: white;
+}
+
+
 }
 
 /*home page slideshow*/
@@ -766,3 +865,39 @@ img.displaySlide{
     padding: 12px 30px;
     margin: 30px 0 0 auto;
 }
+
+/*checkout and billing*/
+.checkoutSection {
+    display: grid;
+    justify-content: flex-end;
+    margin: 3.2em;
+}
+
+.checkoutTitle {
+    font-size: 1.3rem;
+    padding-bottom: 0.5em;
+}
+
+.billingAddress, .paymentDetails {
+    display: grid;
+    border: black 3.5px solid;
+    background-color: #AAE88E;
+    padding: 1em;
+    margin-bottom: 1em;
+    
+}
+
+.input-box input{
+    box-sizing: border-box;
+    margin-right: 10em;
+    width: 97%;
+    height: 100%;
+    padding: 1em;
+    margin: 0.5em;
+    border: black 2px solid;
+}
+
+.paymentDetails {
+    width: 30em;
+}
+
