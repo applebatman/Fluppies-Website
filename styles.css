@@ -119,10 +119,15 @@ nav .mainLogo {
 
 @media (max-width: 391px) {
     .runningBanner {
-        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size:8px;
         height: 7vw;
     }
 
+    .runningBanner p:last-child{
+        display: none;
+    }
 
 }
 
@@ -152,29 +157,61 @@ nav .mainLogo {
     padding: 1vw;
 }
 
+.aboutUs .phoneOnly {
+    display: none;
+}
 @media (max-width: 391px) {
-    .aboutUs {
+
+    .aboutUsPhone {
     display: grid;
     border-radius: 2px;
     gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    padding: 10vh;
-    padding-top: 5vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding: 2em;
+    padding-top: 1em;
     background-color: white;
     align-items: stretch;
     margin: none;
 
 }
 
+.aboutUs h2{
+    font-size: 20px;
+}
 
-.aboutUs img {  
-    height: auto;
+.aboutUsRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     object-fit: cover;
+    gap: 10px;
+}
+
+.aboutUs .aboutUsRow img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.aboutUs .aboutUsColumn {
+    border: black solid 2px;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 20%;
+}
+
+
+.aboutUs .desktop{  
+    display: none;
+
 }
 
 .aboutUsText {
     padding: 1px;
+    font-size: 12px;
 }
 }
 
@@ -233,6 +270,18 @@ footer a:hover svg path {
 
 a {
     text-decoration: none;
+}
+
+@media (max-width:391px) {
+    footer {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+
+    footer input{
+        height: 10px;
+    }
+    
 }
 
 /*home page reccommended section*/
