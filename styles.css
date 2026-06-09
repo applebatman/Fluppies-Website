@@ -11,6 +11,7 @@ html{
     margin: 0px;
     border: 0px;
     box-sizing: border-box;
+    font-family: "Host Grotesk";
 }
 
 
@@ -532,6 +533,63 @@ img.displaySlide{
 
 .product-detail .product-policy p {
     margin:3px
+}
+
+/*product FAQ collapsible */
+.FAQ h2 {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: #000000 2px solid;
+    margin-left: 50%;
+    width: 45%;
+    padding-bottom: 1rem;
+}
+
+.FAQcollapsible {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color:#EAF5B7;
+    padding: 1em;
+    width: 45%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 50%;
+    border: black 2px solid;
+    border-top: none;
+}
+
+
+.active, .FAQcollapsible:hover {
+    background-color: #AAE88E;
+}
+
+.content {
+    padding: 1em;
+    width: 45%;
+    border-bottom: black solid 2px;
+    border-left: #000000 solid 2px;
+    border-right: #000000 solid 2px;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 50%;
+    display: none;
+    overflow: hidden;
+}
+
+
+.collapsible:after {
+  content: '\/'; 
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\/"; 
 }
 
 /*cart styling*/

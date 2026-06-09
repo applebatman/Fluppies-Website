@@ -46,7 +46,7 @@ function nextSlide(){
     showSlide(slideIndex);
 }
 
-//display products
+//display products]
 const productContainer = document.querySelector(".product-list");
 const isProductDetailPage = document.querySelector(".product-detail");
 const isCartPage = document.querySelector(".cart");
@@ -174,6 +174,23 @@ function displayProductDetail(){
         addToCart(productData, selectedColor, selectedSize);
     })
 }
+//collapsible for FAQ//
+ var coll = document.getElementsByClassName("FAQcollapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+
+//cart function//
 
 function addToCart(product, color, size) {
     let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
@@ -240,13 +257,9 @@ function displayCart(){
         cartItemContainer.appendChild(cartItem);
             });
 
-        if (subtotalEl.textContent) {
-            `$${subtotal.toFixed(2)}`;
-        }
+        subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+        grandtotalEl.textContent = `$${subtotal.toFixed(2)}`;
 
-        if (grandtotalEl.textContent) {
-            `$${subtotal.toFixed(2)}`;
-        }
         removeCartItem();
         updateCartQuantity();
 }
