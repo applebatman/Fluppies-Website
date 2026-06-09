@@ -9,7 +9,14 @@ const products = [
             {
                 name: "Red",
                 mainImage: "assets/images/productsPage/radiantDressThumbnail.png",
-                thumbnails: [],
+                thumbnails: [
+                    "assets/images/productsPage/radiantDress3.png",
+                    "assets/images/productsPage/radiantDress4.png",
+                    "assets/images/productsPage/radiantDress5.png",
+                    "assets/images/productsPage/radiantDress2.png",   
+                    "assets/images/productsPage/radiantDress5.png",
+
+                ],
                 sizes: ["S", "M", "L", "XL", "XXL"]
             }
         ]

@@ -35,6 +35,14 @@ nav {
     justify-content: space-between;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
 nav li {
     display: inline;
     padding: 1vh;
@@ -44,7 +52,8 @@ nav li {
 nav .cart-icon {
     position: relative;
     color: black;
-    display:flex
+    display:flex;
+    align-items: center;
 }
 
 nav .cart-icon .cart-item-count{
@@ -69,6 +78,13 @@ nav li a{
 
 nav li a:hover{
     color: #91268E;
+}
+
+
+nav .cart-icon svg {
+    width: 35px;
+    height: 35px;
+    display: block;
 }
 
 /*home page banner*/
@@ -340,7 +356,7 @@ img.displaySlide{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2%;
-    padding: 130px 9% 30px;
+    padding: 13px 9% 30px;
 }
 
 .product-detail .product-img {
@@ -354,29 +370,37 @@ img.displaySlide{
 .product-detail .product-img img {
     order: 1;
     width: 100%;
+    border: black solid 3.5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
     max-height: 500px;
-    object-fit: contain;
+    aspect-ratio:1/1;
+    object-fit: cover;
     
 }
 
 .product-detail .thumbnail-list {
-    order: 2;
+    order: 2;  
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 12px;
     width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
 }
 
 .product-detail .thumbnail-list img {
-    flex:0 1 calc(20%-10px);
+    width: 90px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 3px solid black;
     aspect-ratio:1/1;
     object-fit: cover;
     cursor: pointer;
     box-sizing: border-box;
+    flex-shrink: 0;
+    
 }
 
 .product-detail .title {
@@ -393,6 +417,7 @@ img.displaySlide{
     margin: 20px 0;
 }
 
+
 .product-detail :is(.size-selection, .color-selection) {
     margin: 20px 0;
 }
@@ -408,16 +433,16 @@ img.displaySlide{
 
 .product-detail .size-options button {
     width: 50px;
-    height: 100%;
-    background:rgb(255, 255, 255);
+    height: 30px;
+    background: #AAE88E;
     border: 0.21em solid transparent;
     cursor: pointer;
-
+    font-weight: 7000;
 }
 
 .product-detail .color-options img{
-    width: 10%;
-    height: 10%;
+    width: 9%;
+    height: 9%;
     border: 2px solid transparent;
     cursor: pointer;
 }
@@ -429,12 +454,13 @@ img.displaySlide{
 
 .btn {
     padding: 12px 50px;
-    background: black;
+    background: #ffffff;
     border:none;
     font-size: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     margin-bottom: 20px;
+    border: 2.5px black solid;
 }
 
 .product-detail .product-policy {

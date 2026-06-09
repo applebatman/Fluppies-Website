@@ -100,11 +100,13 @@ function displayProductDetail(){
     const mainImageContainer = document.querySelector(".main-img");
     const thumbnailContainer = document.querySelector(".thumbnail-list");
     const colorContainer = document.querySelector(".color-options")
-    const sizeContainer = document.querySelectorAll(".size-options");
+    const sizeContainer = document.querySelector(".size-options");
     const addToCartBtn = document.querySelector("#add-cart-btn");
 
     let selectedColor = productData.colors[0];
     let selectedSize = selectedColor.sizes[0];
+
+
 
 
 //renders details in//
@@ -170,3 +172,23 @@ function displayProductDetail(){
     })
 }
 
+function addToCart(product, color, size) {
+    let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+    const existingItem= cart.find(item=>item.id=== product.id && item.color === color.name && item.size === size);
+
+    if(existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({
+            id:product.id,
+            title: product.title,
+            price: product.price,
+            image: color.mainImage,
+            color: color.name,
+            size: size,
+            quantity: 1
+        });
+    }
+
+      sessionStorage.setItem("cart", JSON.stringify(cart));
+}
