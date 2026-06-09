@@ -419,7 +419,7 @@ img.displaySlide{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2%;
-    padding: 13px 9% 30px;
+    padding-left: 4.5rem;
 }
 
 .product-detail .product-img {
@@ -534,28 +534,39 @@ img.displaySlide{
 .product-detail .product-policy p {
     margin:3px
 }
-
+/*bottom layout for product layout*/
+.bottomLayout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 4.5rem;
+    box-sizing: border-box;
+}
 /*product FAQ collapsible */
+
+.FAQ {
+    width: 45%;
+}
+
 .FAQ h2 {
     display: flex;
     align-items: flex-end;
     border-bottom: #000000 2px solid;
-    margin-left: 50%;
-    width: 45%;
     padding-bottom: 1rem;
 }
 
 .FAQcollapsible {
+    display: grid;
     cursor: pointer;
     color: rgb(0, 0, 0);
     background-color:#EAF5B7;
     padding: 1em;
-    width: 45%;
+    width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 1rem;
-    margin-left: 50%;
     border: black 2px solid;
     border-top: none;
 }
@@ -567,30 +578,50 @@ img.displaySlide{
 
 .content {
     padding: 1em;
-    width: 45%;
     border-bottom: black solid 2px;
     border-left: #000000 solid 2px;
     border-right: #000000 solid 2px;
     text-align: left;
     outline: none;
     font-size: 1rem;
-    margin-left: 50%;
     display: none;
     overflow: hidden;
 }
 
-
-.collapsible:after {
-  content: '\/'; 
-  font-size: 13px;
-  color: white;
-  float: right;
-  margin-left: 5px;
+.content img {
+    width: 70%;
+    object-fit: fill;
+    align-items: center;
 }
 
-.active:after {
-  content: "\/"; 
+
+/*Ai Implementation featuring*/
+.AiImplementation h2{
+    padding-bottom: 1rem;
+
+
 }
+
+.tryOnArea {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.blankSpace {
+    background-color: white;
+    width: 20px;
+    height: 100%;
+    border: black 2px solid;
+}
+
+.pickStyle {
+    width: 20%;
+    height:25%;
+    background-color: #AAE88E;
+    border-color: black solid 2px;
+}
+
 
 /*cart styling*/
 .cart {
