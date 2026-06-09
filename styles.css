@@ -393,15 +393,15 @@ img.displaySlide{
     margin: 20px 0;
 }
 
-.product-detail .size-selection {
+.product-detail :is(.size-selection, .color-selection) {
     margin: 20px 0;
 }
 
-.product-detail .size-selection p {
+.product-detail :is(.size-selection p, .color-selection p) {
     margin-bottom:10px;
 }
 
-.product-detail .size-options {
+.product-detail :is(.size-options, .color-options) {
     display:flex;
     gap: 10px;
 }
@@ -415,8 +415,15 @@ img.displaySlide{
 
 }
 
+.product-detail .color-options img{
+    width: 10%;
+    height: 10%;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
 
-.product-detail :is(.size-options .selected, .selected) {
+
+.product-detail :is(.size-options .selected, .color-options .selected) {
     border-color: rgb(0, 0, 0);
 }
 
