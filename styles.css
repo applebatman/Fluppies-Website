@@ -87,7 +87,7 @@ nav .mainLogo {
     nav {
         display: flex;
         justify-content: space-between;
-        height: 50px;
+        height: 60px;
     }
 
     nav .mainLogo {
@@ -98,9 +98,20 @@ nav .mainLogo {
         gap: 0.00000001px;
     }
     nav ul li {
-        font-size: 10px;
+        font-size: 13px;
     }
 
+    nav .cart-icon .cart-item-count{
+    position: absolute;
+    top:0px;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    display: none;
+}
 
 }
 
@@ -498,6 +509,15 @@ img.displaySlide{
     color: #91268E;
 }
 
+@media(max-width:391px){
+    .quickNavigation {
+        display: flex;
+        padding: 0;
+        margin: 0px;
+        padding-top: 20px;
+    }
+}
+
 /*category styling*/
 
 .categoryTitle {
@@ -624,7 +644,7 @@ img.displaySlide{
     overflow: hidden;
     cursor: pointer;
     border: #000000 3.5px solid;
-    width: 102%;
+    width: 75%;
 
 }
 
@@ -646,6 +666,42 @@ img.displaySlide{
 }
 
 @media (max-width:391px) {
+    .product-collection {
+        margin: 1em;
+}
+
+.product-collection .product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    width:100%;
+
+}
+
+.product-collection .img-box {
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    border: #000000 3.5px solid;
+    width: 250px;
+
+}
+
+.product-collection .img-box img{
+    aspect-ratio: 1/1.1;
+    display: block;
+    object-fit: cover;
+}
+
+.product-collection .img-box:hover img{
+    transform:scale(1.1);
+}
+
+.product-collection .title {
+    font-size: 1.5rem;
+    padding-top: 0;
+}    
 
 }
 
@@ -886,8 +942,51 @@ img.displaySlide{
 
 @media (max-width:391px) {
     .bottomLayout {
-        display: none;
+        display: grid;
+        padding: 5%;
     }
+
+    .AiImplementation {
+        width: 100%;
+        margin: none;
+        padding: none;
+    }
+
+    .FAQ {
+        width: 100%;
+    }
+
+    .product-detail {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .product-detail .thumbnail-list img {
+        display: grid;
+        width: 20%;
+    }
+
+    .product-info {
+        padding: 0;
+        margin: 0;
+    }
+
+    .product-info .title {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .product-info .price {
+        margin: 5px 0;
+        padding-top: 1px;
+    }
+
+    .product-info .color-options {
+        width:500px;
+    }
+
+
 }
 
 /*cart styling*/
@@ -1040,5 +1139,120 @@ img.displaySlide{
 
 .paymentDetails {
     width: 30em;
+}
+
+@media(max-width:391px) {
+    .cart {
+        padding:1em;
+    }
+    .cart-header {
+        display: none;
+    }
+
+    .cart-item {
+        display: flex;
+        background: #AAE88E;
+        align-items: center;
+        padding: 0;
+        border: #000000 solid 3.5px;
+        margin-bottom: 2vh;
+        font-size: 11px;
+    }
+
+    .cart-item img{
+        width: 60px;
+    }
+
+    .cart-item .price {
+        display: none;
+    
+    }
+
+    .cart-item .size-color-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.cart-item .size{
+    width:2em;
+    height:10%;
+    font-size: 10px;
+    border: black solid 2px;
+}
+
+.cart-item :is(.price, .quantity, .total-price) {
+    flex: 1;
+    text-align: right;  
+}
+
+.cart-item .quantity input {
+    width: 50px;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    text-align: center;
+    font-size: 10Spx;
+}
+
+.cart-item .remove {
+    background:transparent;
+    border: none;
+    flex:1;
+}
+
+.remove svg {
+    width: 30%;
+}
+.cart-total {
+    width: 100%;
+    margin: 20px 1px 0 auto;
+}
+
+.cart-total .btn {
+    display: block;
+    padding: 10px 10px;
+    margin: 30px 0 0 auto;
+    font-size: 15px;
+}
+
+.checkoutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1em;
+}
+
+.checkoutTitle {
+    font-size: 1.3rem;
+    padding-bottom: 0.5em;
+}
+
+.billingAddress, .paymentDetails {
+    display: grid;
+    border: black 3.5px solid;
+    background-color: #AAE88E;
+    padding: 1em;
+    margin-bottom: 1em;
+    
+}
+
+.input-box input{
+    box-sizing: border-box;
+    margin-right: 10em;
+    width: 96%;
+    height: 100%;
+    padding: 1em;
+    margin: 0.5em;
+    border: black 2px solid;
+}
+
+.paymentDetails {
+    width: 100%;
+}
+
+
+
 }
 
