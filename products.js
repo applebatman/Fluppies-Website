@@ -155,6 +155,161 @@ const products = [
 
     },
 
+         { 
+        id: 10,
+        title: "GREEN JACKET",
+        category:"Jackets",
+        price: "$50",
+        description: "The perfect jacket for your dog",
+        colors: [
+            {
+                name: "Green",
+                mainImage: "assets/images/productsPage/jackets1.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+
+    
+         { 
+        id: 11,
+        title: "BLUE PUFFER ",
+        category:"Jackets",
+        price: "$50",
+        description: "The perfect puffer for your dog",
+        colors: [
+            {
+                name: "Blue",
+                mainImage: "assets/images/productsPage/jackets2.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+    
+         { 
+        id: 12,
+        title: "PLAID JACKET",
+        category:"Jackets",
+        price: "$25",
+        description: "The perfect jacket for your dog",
+        colors: [
+            {
+                name: "Plaid",
+                mainImage: "assets/images/productsPage/jackets3.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+
+             { 
+        id: 13,
+        title: "GEOMETRIC HOODIE",
+        category:"Hoodies",
+        price: "$25",
+        description: "Picasso? More like pi-bark-so",
+        colors: [
+            {
+                name: "Geo",
+                mainImage: "assets/images/productsPage/hoodies1.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+            { 
+        id: 14,
+        title: "GALAXY HOODIE",
+        category:"Hoodies",
+        price: "$105",
+        description: "Star-studded hoodie will make sure your dog is forever dripped out",
+        colors: [
+            {
+                name: "Geo",
+                mainImage: "assets/images/productsPage/hoodies2.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+
+     { 
+        id: 15,
+        title: "DENIM HOODIE",
+        category:"Hoodies",
+        price: "$105",
+        description: "Jeans are passed from litter to litter, and this will keep you looking sharp",
+        colors: [
+            {
+                name: "Geo",
+                mainImage: "assets/images/productsPage/hoodies3.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+
+       { 
+        id: 16,
+        title: "UNICORN COSTUME",
+        category:"Costumes",
+        price: "$67",
+        description: "You won't ever be needing a wish right now once you see your fluffball in this!",
+        colors: [
+            {
+                name: "Rainbow",
+                mainImage: "assets/images/productsPage/costumes1.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+
+       { 
+        id: 16,
+        title: "HOT DAWG",
+        category:"Costumes",
+        price: "$2",
+        description: "Looking like a Sausage dog!",
+        colors: [
+            {
+                name: "Hot Dog",
+                mainImage: "assets/images/productsPage/costumes2.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+
+           { 
+        id: 17,
+        title: "SHARK COSTUME",
+        category:"Costumes",
+        price: "$4",
+        description: "*Incoming Jaws theme song*",
+        colors: [
+            {
+                name: "Shark",
+                mainImage: "assets/images/productsPage/costumes3.jpg",
+                thumbnails: [],
+                sizes: ["S", "M", "L", "XL", "XXL"]
+            }
+        ]
+
+    },
+
+
+
     
 
     
