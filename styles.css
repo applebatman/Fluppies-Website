@@ -83,11 +83,11 @@ nav .mainLogo {
     width: 20%;
 }
 
-/* Bumped to 430px to safely catch all modern mobile screens including iPhones */
 @media (max-width: 391px) {
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        height: 50px;
     }
 
     nav .mainLogo {
@@ -98,7 +98,7 @@ nav .mainLogo {
         gap: 0.00000001px;
     }
     nav ul li {
-        font-size: 1rem;
+        font-size: 10px;
     }
 
 
@@ -133,7 +133,7 @@ nav .mainLogo {
 
 /*about us home page section*/
 
-.aboutUs {
+.aboutUsDesktop {
     display: grid;
     border-radius: 2px;
     gap: 10px;
@@ -147,7 +147,7 @@ nav .mainLogo {
 
 
 
-.aboutUs img {  
+.aboutUsDesktop img {  
     height: auto;
     width: 100%;
     object-fit: cover;
@@ -157,9 +157,11 @@ nav .mainLogo {
     padding: 1vw;
 }
 
-.aboutUs .phoneOnly {
+.aboutUsPhone {
     display: none;
 }
+
+
 @media (max-width: 391px) {
 
     .aboutUsPhone {
@@ -176,7 +178,7 @@ nav .mainLogo {
 
 }
 
-.aboutUs h2{
+.aboutUsPhone h2{
     font-size: 20px;
 }
 
@@ -188,14 +190,14 @@ nav .mainLogo {
     gap: 10px;
 }
 
-.aboutUs .aboutUsRow img{
+.aboutUsPhone .aboutUsRow img{
     display: block;
     height: 100%;
     object-fit: cover;
     aspect-ratio: 1/1;
 }
 
-.aboutUs .aboutUsColumn {
+.aboutUsPhone .aboutUsColumn {
     border: black solid 2px;
     width: 100%;
     height: 50%;
@@ -213,7 +215,21 @@ nav .mainLogo {
     padding: 1px;
     font-size: 12px;
 }
+
+.aboutUsPhone img {  
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 }
+
+.aboutUsDesktop {
+    display: none;
+}
+}
+
+
+
+
 
 /*footer*/
 
@@ -397,6 +413,10 @@ a {
     font-size: 1.5rem;
 }
 
+.shopNowButton a{
+    color: black;
+}
+
 .shopNowButton a:hover {
     background-color: white;
 }
@@ -428,7 +448,7 @@ img.displaySlide{
     font-size: 2rem;
     padding: 10px 15px;
     color: black;
-    background-color: none;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -440,6 +460,23 @@ img.displaySlide{
     right:0;
 }
 
+@media (max-width:391px) {
+    .shopNowButton{
+        width: 100px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .shopNowButton a{
+        width: 10em;
+    }
+
+    .carasol img {
+        height: 100%;
+        width: 60%;
+        margin-left: 20%;
+    }
+}
 
 /*quick navigation*/
 
@@ -518,6 +555,53 @@ img.displaySlide{
     background-color: white;
 }
 
+@media (max-width:391px) {
+.categoryTitle {
+    padding-top: 20px;
+    padding-left: 3em;
+    font-size: 10px;
+}
+
+.categoryList {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap:1em;
+
+}
+
+.categoryList {
+    padding:2em;
+    padding-top: 1em;
+    padding-bottom: 10vh;
+    
+}
+
+.categoryList img {
+    object-fit: stretch;
+    width: 100%;
+    height: 100%;
+    border: black solid 4px;
+}
+
+.category {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    
+}
+
+
+.category a {
+    width: 6em;
+    border:1px solid #000000;
+    color: black;
+    font-size: 1rem;
+    padding:2%
+
+ 
+}
+
+}
 
 /*product card styling*/
 .product-collection {
@@ -559,6 +643,10 @@ img.displaySlide{
 .product-collection .title {
     font-size: 1.5rem;
     padding-top: 0.7rem;
+}
+
+@media (max-width:391px) {
+
 }
 
 /*product detail styling*/
@@ -796,7 +884,11 @@ img.displaySlide{
 
 }
 
-
+@media (max-width:391px) {
+    .bottomLayout {
+        display: none;
+    }
+}
 
 /*cart styling*/
 .cart {
