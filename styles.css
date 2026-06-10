@@ -14,6 +14,13 @@ html{
     font-family: "Host Grotesk";
 }
 
+@media (max-width:391px) {
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
 /*navigation bar*/
 
 nav {
@@ -162,6 +169,7 @@ nav .mainLogo {
     height: auto;
     width: 100%;
     object-fit: cover;
+    border: #000000 solid 3px;
 }
 
 .aboutUsText {
@@ -206,6 +214,7 @@ nav .mainLogo {
     height: 100%;
     object-fit: cover;
     aspect-ratio: 1/1;
+    border: black 3px solid;
 }
 
 .aboutUsPhone .aboutUsColumn {
@@ -250,6 +259,7 @@ footer {
     align-items: center; 
     padding: 2vh;
     width: 100%;
+    background-color: #AAE88E;
 }
 
 footer ul {
@@ -332,7 +342,7 @@ a {
 .reccommendedThumbnails img {
     object-fit: stretch;
     width: 100%;
-    border: black solid 2px;
+    border: black solid 3px;
 }
 
 .thumbnail {
@@ -362,9 +372,10 @@ a {
 
 @media (max-width: 391px) {
     .reccommendedThumbnails {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    gap: .7em;
+    gap: 2em;
     padding-top: 1em;
 
 }
@@ -373,14 +384,16 @@ a {
 .reccommended {
     padding: 10px;
     padding-top: 1em;
-    font-size: 8px;
+    font-size: 10px;
     margin-bottom: 20px;
+    font-weight: 10;
 }
 
 .reccommendedThumbnails img {
-    object-fit: stretch;
+    object-fit: cover;
     width: 100%;
-    border: black solid 2px;
+    border: black solid 3px;
+    gap: 10px;
 }
 
 .thumbnail {
@@ -627,6 +640,7 @@ img.displaySlide{
 .product-collection {
     padding-left: 4.5rem;
     padding-right:4.5rem ;
+    padding-bottom: 4.5rem;
 }
 
 .product-collection h1 {
@@ -645,7 +659,6 @@ img.displaySlide{
     cursor: pointer;
     border: #000000 3.5px solid;
     width: 75%;
-
 }
 
 .product-collection .img-box img{

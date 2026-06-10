@@ -143,7 +143,7 @@ const products = [
         title: "FISH COLLAR",
         category:"Collars",
         price: "$10",
-        description: "YEEHAWW",
+        description: "The perfect collar for your dog",
         colors: [
             {
                 name: "Blue",
