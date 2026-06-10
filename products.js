@@ -245,7 +245,7 @@ const products = [
         title: "DENIM HOODIE",
         category:"Hoodies",
         price: "$105",
-        description: "Jeans are passed from litter to litter, and this will keep you looking sharp",
+        description: "Jeans are passed down from litter to litter, and this will keep you looking sharp",
         colors: [
             {
                 name: "Geo",
@@ -275,7 +275,7 @@ const products = [
     },
 
        { 
-        id: 16,
+        id: 17,
         title: "HOT DAWG",
         category:"Costumes",
         price: "$2",
@@ -292,7 +292,7 @@ const products = [
     },
 
            { 
-        id: 17,
+        id: 18,
         title: "SHARK COSTUME",
         category:"Costumes",
         price: "$4",
